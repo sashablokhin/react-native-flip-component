@@ -15,6 +15,7 @@ class FlipComponent extends Component {
     containerStyles: ViewPropTypes.style,
     frontStyles: ViewPropTypes.style,
     backStyles: ViewPropTypes.style,
+    flipEnded: PropTypes.func
   };
 
   static defaultProps = {
@@ -26,6 +27,7 @@ class FlipComponent extends Component {
     containerStyles: null,
     frontStyles: null,
     backStyles: null,
+    flipEnded: () => {}
   };
 
   constructor(props) {
@@ -81,7 +83,7 @@ class FlipComponent extends Component {
           easing: Easing.linear,
         },
       ),
-    ]).start();
+    ]).start(flipEnded);
   }
 
   render() {
