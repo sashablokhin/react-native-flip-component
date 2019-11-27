@@ -24,6 +24,7 @@ rotateDuration | false | Controls the duration of the rotation. Defaults to 300
 containerStyles | false | Styles for the flip-component's container `<View>`. Defaults to null
 frontStyles | false | Styles for the `<Animated.View>` that wraps the front component. Defaults to null
 backStyles | false | Styles for the `<Animated.View>` that wraps the back component. Defaults to null
+flipEnded | false | Flip animation completion handler
 
 ### Example
 
