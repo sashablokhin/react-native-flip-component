@@ -83,7 +83,7 @@ class FlipComponent extends Component {
           easing: Easing.linear,
         },
       ),
-    ]).start(flipEnded);
+    ]).start(this.props.flipEnded);
   }
 
   render() {
